@@ -393,14 +393,14 @@ if selected == "Home":
     )
     st.write("")
     st.write("")
-    with open("Resume_Geethika.pdf","rb") as f:
+    with open("Geethika_Resume.pdf","rb") as f:
         resume = f.read()
     c1, c2, c3 = st.columns([2,2,1])
     with c2:
         st.download_button(
             label="Download Resume",
             data=resume,
-            file_name="Resume_Geethika.pdf",
+            file_name="Geethika_Resume.pdf",
             mime="application/pdf"
         )
 
